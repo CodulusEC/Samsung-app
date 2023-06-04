@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <Button
+        android:id="@+id/startbutton"
+        android:layout_width="305dp"
+        android:layout_height="80dp"
+        android:background="@drawable/roundbuttontest"
+        android:text="Выбрать"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.801" />
+
+    <ImageButton
+        android:id="@+id/boobsbutton2"
+        android:layout_width="147dp"
+        android:layout_height="111dp"
+        android:layout_marginEnd="52dp"
+        android:contentDescription="Enter How Much Cookies You Want"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.155"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startbutton"
+        app:layout_constraintVertical_bias="0.888"
+        app:srcCompat="@drawable/books" />
+
+    <ImageButton
+        android:id="@+id/button888"
+        android:layout_width="139dp"
+        android:layout_height="113dp"
+        android:layout_marginEnd="36dp"
+        android:contentDescription="Enter How Much Cookies You Want"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startbutton"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/faq" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="406dp"
+        android:layout_height="359dp"
+        app:layout_constraintBottom_toTopOf="@+id/startbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.61">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/armbut"
+                android:layout_width="364dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:contentDescription="Enter How Much Cookies You Want"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/armsmain" />
+
+            <ImageButton
+                android:id="@+id/legsbut"
+                android:layout_width="362dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:contentDescription="Enter How Much Cookies You Want"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/legsmain" />
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="match_parent"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:orientation="vertical"-->
+            <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--                app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                app:layout_constraintStart_toStartOf="parent"-->
+            <!--                app:layout_constraintTop_toTopOf="parent">-->
+
+            <!--                <Button-->
+            <!--                    android:id="@+id/first"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="111dp"-->
+            <!--                    android:background="@drawable/roundbuttontest"-->
+            <!--                    android:text="Подъемы штанги стоя" />-->
+
+            <!--                <Button-->
+            <!--                    android:id="@+id/second"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="111dp"-->
+            <!--                    android:text="Подъемы на скамье Скотта " />-->
+
+            <!--                <Button-->
+            <!--                    android:id="@+id/third"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="111dp"-->
+            <!--                    android:text="Подтягивания узким обратным хватом" />-->
+
+            <!--                <Button-->
+            <!--                    android:id="@+id/forth"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="111dp"-->
+            <!--                    android:text="Подъемы штанги лежа грудью на наклонной скамье" />-->
+
+            <!--                <Button-->
+            <!--                    android:id="@+id/fifth"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="111dp"-->
+            <!--                    android:text="Концентрированные сгибания с гантелей" />-->
+            <!--            </LinearLayout>-->
+
+
+            <ImageButton
+                android:id="@+id/spinebut"
+                android:layout_width="362dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:contentDescription="Enter How Much Cookies You Want"
+                android:scaleType="fitXY"
+                android:onClick="onTestClick"
+                app:srcCompat="@drawable/spinemain" />
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+
+    <ImageView
+        android:id="@+id/difstatus"
+        android:layout_width="94dp"
+        android:layout_height="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/startbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
+        app:srcCompat="@drawable/state0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
